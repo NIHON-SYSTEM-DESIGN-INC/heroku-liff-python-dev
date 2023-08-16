@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>名刺</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/liff.css">
+    <link rel="stylesheet" href="{% static 'css/reset.css'%}">
+    <link rel="stylesheet" href="{% static '/css/liff.css'%}">
     <script src="https://unpkg.com/glottologist"></script>
 </head>
 
@@ -26,15 +28,11 @@
             <p>TEL：00-0000-0000</p>
             <p>FAX：00-0000-0001</p>
             <p>MAIL：meishi@example.co.jp</p>
-            <p>{% load static %}</p>
         </div>
     </div>
 
-{% load static %}
-<img src="{% static 'lang-logo.png'%}">
-
     <script src="https://static.line-scdn.net/liff/edge/versions/2.8.0/sdk.js"></script>
-    <script src="/static/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script src="{% static 'js/jquery-1.9.0.min.js'%}" type="text/javascript"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="{% static 'js/index.js'%}"></script>
 </body>
