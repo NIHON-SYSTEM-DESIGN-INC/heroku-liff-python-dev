@@ -1,7 +1,7 @@
 const lang = getParam('lang');
 const defaultLang = 'ja';
 const supportedLangList = ['ja']
-const cloudfrontUrl = 'https://d3qpjltynb9wb9.cloudfront.net'
+const cloudfrontUrl = 'https://demo-line-mini-app-e8a887d515db.herokuapp.com'
 
 window.onload = function () {
 	const useNodeJS = false;   // if you are not using a node server, set this value to false
